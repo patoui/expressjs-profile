@@ -32,10 +32,10 @@ app.get('/', function (req, res) {
 	res.render('home');
 });
 
-app.get('/download-resume', function(req, res){
-	var file = __dirname + '/public/downloads/test.txt';
-  	res.download(file);
-});
+// app.get('/download-resume', function(req, res){
+// 	var file = __dirname + '/public/downloads/PatriqueOuimetResumeITWeb.doc';
+//   	res.download(file);
+// });
 
 app.post('/contact-me', function(req, res){
 	app.mailer.send(
